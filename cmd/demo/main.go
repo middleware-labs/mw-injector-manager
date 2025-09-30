@@ -228,7 +228,6 @@ func printSummary(processes []discovery.JavaProcess) {
 			}
 		}
 	}
-	// pp.Println("Processes: ", processes)
 	fmt.Println("📊 Discovery Summary:")
 	fmt.Printf("   Total Java Processes: %d\n", totalProcesses)
 	fmt.Printf("   Instrumented: %d (%.1f%%)\n", instrumentedCount,

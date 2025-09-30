@@ -22,7 +22,7 @@ const (
 	StateServiceConfig
 	StateHealthCheck
 	StateHelp
-	// --- New States Added ---
+
 	StateProcessOptions    // State for showing options for a selected process
 	StateProcessDetailView // State for showing the detailed view of a process
 	StateConfigureInstrumentation
@@ -75,7 +75,7 @@ type Model struct {
 	ctx                  context.Context
 	cancel               context.CancelFunc
 	selectedProcessIndex int // Track which process is selected in the list
-	// --- New: List for process options ---
+
 	processOptionsList   list.Model
 	configFormInputs     []textinput.Model
 	configFormToggles    []bool

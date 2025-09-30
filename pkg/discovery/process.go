@@ -40,8 +40,6 @@ func (d *discoverer) DiscoverWithOptions(ctx context.Context, opts DiscoveryOpti
 
 	// Filter for Java processes first to reduce workload
 	javaProcesses := d.filterJavaProcesses(allProcesses)
-	// pp.Println("JAVA PROCESSES: ")
-	// pp.Println(javaProcesses)
 	// Process concurrently with worker pool
 	return d.processWithWorkerPool(ctx, javaProcesses, opts)
 }
